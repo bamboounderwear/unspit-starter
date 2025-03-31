@@ -1,2 +1,20 @@
-// unspit-config-marker-v1
-{}
+{
+  "unspit_managed": true,
+  "settings": {
+    "content_root": "content/",
+    "media_folder": "static/images"
+  },
+  "collections": [
+    {
+      "name": "posts",
+      "label": "Blog Posts",
+      "folder": "content/posts",
+      "create": true,
+      "fields": [
+        {"label": "Title", "name": "title", "widget": "string"},
+        {"label": "Publish Date", "name": "date", "widget": "datetime"},
+        {"label": "Body", "name": "body", "widget": "markdown"}
+      ]
+    }
+  ]
+}
